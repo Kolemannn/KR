@@ -1,0 +1,99 @@
+<{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap-theme.css' %}">
+        <link rel="stylesheet" href="{% static 'others/main.css' %}">
+        <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+        <link href="jumbotron-narrow.css" rel="stylesheet">
+        <title>Студент {{student.fioStudent}}</title>
+    </head>
+    <bode>
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Дневник занятий</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="{% url "store:groups" %}">Список секций</a></li>
+            <li><a href="{% url "store:students" %}">Записавшиеся студенты</a></li>
+            <li><a href="#contact">Преподаватели</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ <div class="container">
+      <div class="jumbotron">
+        <p class="lead"> 
+    <link rel="stylesheet" href="{% static 'others/main.css' %}">
+</head>
+    <bode>
+    <form method="POST">
+    	{% csrf_token %}
+    	{{ form.non_field_errors }}
+        <table class="studentview" id="edit">
+        	<tr>
+        	<td>{{ form.title.label_tag }}</td>
+        	<td>{{ form.title}}</td>
+        	<td>{{ form.title.errors }}</td>
+        	</tr>
+        	<tr>
+        	<td>{{ form.teacher.label_tag }}</td>
+        	<td>{{ form.teacher}}</td>
+        	<td>{{ form.teacher.errors }}</td>
+        	</tr>
+        	<tr>
+        	<td>{{ form.datetime.label_tag }}</td>
+        	<td>{{ form.datetime}}</td>
+        	<td>{{ form.datetime.errors }}</td>
+        	</tr>
+        	<tr>
+        	<td>{{ form.level.label_tag }}</td>
+        	<td>{{ form.level}}</td>
+        	<td>{{ form.level.errors }}</td>
+        	</tr>
+             <tr>
+            <td> <div id="editbutton">
+                <input type="submit" value="Сохранить">
+                <input type="reset" value="Очистить"> 
+                    </div>     
+            </td>
+            </tr>
+        </table>       
+    </form>
+    <form action="{% url "store:groupdelete" g.pk%}" method="DELETE">
+    	{% csrf_token %}
+        <table class="studentview" id="delete">
+
+            <tr><td><button formmethod="DELETE">Удалить</button></td></tr>
+        </table>
+    	
+    </form>
+     <ul class="pager">
+                      <li><a href="{% url "store:groups" %}">Назад к списку секций</a></li>
+    
+        </ul> 
+        </div>
+        <div class="footer">
+      <p>&copy; ИУ5-23М Цыберный Н.Н 2018</p>
+    </div>  
+    </bode>
+</html>     

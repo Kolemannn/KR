@@ -1,0 +1,86 @@
+
+body {
+   
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    background-color: #fff;
+
+}
+
+.menu {
+    margin-top: 0px;
+	height: 50px;
+	background-color: #ffd43b;
+	padding-top: 8px;
+	margin: 0px;
+}
+
+
+.container-fluid {
+	border-bottom: 5px;
+}
+
+.form-horizontal{ 
+       border: 8px solid
+       border-color: black;
+       border-radius: 4px;
+       width: 600px;
+       height: 210px;
+
+       
+}
+
+.form-horizontal .control-label { text-align: left;
+}
+
+input, textarea, .uneditable-input {
+    width: 50px;
+}
+
+
+
+.placeholder{min-height: 20px;}
+.mylabel { text-align: left; vertical-align: left;}
+.mycontrols {float: right; margin-right: 110px;}
+
+.control-group {vertical-align: left; 
+				border-color: black; 
+				border: 1px solid transparent;
+				border-radius: 4px;
+				padding-top: 5px;
+}
+
+.form-horizontal .controls {
+    margin-left: 0px;
+}
+
+
+.col-md-5{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	background: #3e8da8;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 60px;
+}
+
+.col-md-4{
+	
+	width: 450px;
+}
+
+
+#resform {
+    font-size: 16px;
+    
+}
+
+
+
+.pull-left{
+
+	margin-top: 30px;
+}
+

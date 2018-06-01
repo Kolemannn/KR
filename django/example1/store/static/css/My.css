@@ -1,0 +1,134 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    background-color: #fff;
+}
+
+
+.menu {
+
+	height: 50px;
+	background-color: #ffd43b;
+}
+
+
+
+.form-horizontal{ 
+       border: 8px solid
+       border-color: black;
+       border-radius: 4px;
+       width: 600px;
+       height: 200px;
+
+       
+}
+
+
+
+.hideblock .hidemy {
+    display: none;
+}
+
+#resform {
+	 background-color: green;
+	
+}
+
+legend {color:black;
+		border-bottom: 0px;
+}
+.control-label{width: 300px; 
+	           padding: 0px;
+	           vertical-align: left;
+}
+.form-horizontal .control-label { text-align: left;
+}
+
+
+input, textarea, .uneditable-input {
+    width: 50px;
+}
+
+.controls{float:left;}
+.placeholder{min-height: 20px;}
+.mylabel { text-align: left; vertical-align: left;}
+.mycontrols {float: left; }
+
+.control-group {vertical-align: left; 
+				border-color: black; 
+				border: 1px solid transparent;
+				border-radius: 4px;
+				padding-top: 5px;
+}
+
+.form-horizontal .controls {
+    margin-left: 0px;
+}
+
+.pull-right {
+    float: left;
+}
+
+
+
+
+
+
+
+#res{
+	margin-bottom: 20px;
+
+}
+
+
+	
+
+
+
+
+.nav {
+    margin-left: 10px;
+    list-style: none;}
+
+ul, ol {
+    margin: 0 0 10px 25px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-left: 25px;
+    padding-top: 12px;
+}
+
+.text-muted{
+	color: #777;
+}
+
+ h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	margin: .67em 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col-md-6 {
+	
+	margin-left: 10px;
+	border: 3px solid;
+    border-color: #337ab7;
+    border-radius: 4px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+   

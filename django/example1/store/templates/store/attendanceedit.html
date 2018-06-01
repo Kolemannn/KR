@@ -1,0 +1,42 @@
+<html>
+<head><title>Посещаемость</title></head>
+    <bode>
+    <form method="POST">
+    	{% csrf_token %}
+    	{{ form.non_field_errors }}
+        <table border="1">
+        	<tr>
+        	<td>{{ form.date.label_tag }}</td>
+        	<td>{{ form.date}}</td>
+        	<td>{{ form.date.errors }}</td>
+        	</tr>
+        	<tr>
+        	<td>{{ form.attendance.label_tag }}</td>
+        	<td>{{ form.attendance}}</td>
+        	<td>{{ form.attendance.errors }}</td>
+        	</tr>
+        	<tr>
+        	<td>{{ form.healthGroup.label_tag }}</td>
+        	<td>{{ form.healthGroup}}</td>
+        	<td>{{ form.healthGroup.errors }}</td>
+        	</tr>
+        <table>
+        <br>
+        <table border="1">
+        	<tr>
+        	<td>{{ form.attendanceStudent.label_tag }}</td>
+        	<td>{{ form.attendanceStudent}}</td>
+        	<td>{{ form.attendanceStudent.errors }}</td>
+        	</tr>
+        </table>
+        <br>
+    <input type="submit" value="Сохранить">
+    <input type="reset" value="Очистить">        
+    </form>
+    <div class="footer">
+      <p>&copy; ИУ5-23М Цыберный Н.Н 2018</p>
+    </div>
+    </bode>
+</html>     
+ 
+ 

@@ -1,0 +1,53 @@
+.sectitle{
+	 
+     font-size: 150%; /* Размер шрифта в процентах */ 
+     font-family: serif; /* Шрифт с засечками */ 
+}
+
+table.studentview {
+	 margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid black;
+    border-style:5;
+    width: 380px
+    
+}
+
+span.fio {
+    
+	width: 200px;
+    padding-right:  10px;
+	
+}
+
+#attendance {
+
+	margin-top: 10px;
+}
+
+#button {
+	
+    padding-top: 20px;
+}
+table.attendance {
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 10px;
+}
+
+#edit {
+
+	width: 400px;
+}
+#editbutton {
+	padding-top: 10px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+}
+
+ #delete {
+ 	 width: 430px;
+ 	 border-bottom: 1px black;
+    border-style:5;
+ }

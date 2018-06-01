@@ -1,0 +1,18 @@
+<html>
+    <head>
+    	<title>Даты посещаемости</title>
+    </head>
+    <bode>
+        <h1>Даты посещаемости</h1>
+        <ul>
+            {% for a in att %}
+                <li>
+                    {{a.date, a.attendance}} 
+                    &mdash;
+                    <a href="{% url "store:group" g.pk %}">Просмотреть</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </bode>
+</html>    
+ 
