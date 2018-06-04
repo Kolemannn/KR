@@ -9,8 +9,13 @@ class SectionForm(forms.ModelForm):
  		fields = '__all__'
  		#exclude = ('Level',)
  		labels = {
- 			'title': 'Название секции'
+ 			'title'		: 'Название секции',
+ 			'teacher'	: 'Преподаватель',
+ 			'datetime'	: 'Время занятий',
+ 			'level'		: 'Уровень'
  		}
+ 		
+ 		
 
 class StudentForm(forms.ModelForm):
  	class Meta :
@@ -21,8 +26,8 @@ class StudentForm(forms.ModelForm):
  			'fioStudent'  	 : 'Ф.И.О',
  			'faculty'  	     : 'Факультет',
  			'healthGroup' 	 : 'Группа здоровья',
- 			'sectionStudent' : 'Секция'
- 			
+ 			'sectionStudent' : 'Секция',
+ 			'contStudent'	 : 'Телефон'
  		}
 
 class AttendanceForm (forms.ModelForm):
@@ -32,8 +37,27 @@ class AttendanceForm (forms.ModelForm):
 		labels = {
  			'date'  	 	: 'Дата',
  			'attendance'  	: 'Присутствовал',
- 			'studentAttend' : 'Студент'
- 			
+ 			'studentAttend' : 'Студент',
+ 			'reason'		: 'Причина'
  		}
 	
+class TeacherForm (forms.ModelForm):
+	class Meta :
+		model = Teacher
+		fields = '__all__'
+		labels = {
+ 			'fioTeacher'  	: 'Ф.И.О',
+ 			'sport'  		: 'Вид спорта',
+ 			'contTeacher' 	: 'Телефон',
+ 			'trackRecord'	: 'Достижения',
+ 			'grade'			: 'Грейд'
+ 		}
 		
+class ReportForm(forms.Form):
+	attendance = forms.BooleanField(label = 'Присутствовал',required=False)
+	faculty = forms.CharField(label = 'Кафедра')
+	date = forms.DateField( label = 'Дата')
+
+class TeacherForm(forms.Form):
+	datetime = forms.CharField(label = 'День недели')
+	trackRecord = forms.CharField(label = 'Достижение')

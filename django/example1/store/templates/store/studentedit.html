@@ -29,13 +29,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Дневник занятий</a>
+         <a class="navbar-brand" href="{% url "store:users" %}">Выход</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="{% url "store:groups" %}">Список секций</a></li>
             <li><a href="{% url "store:students" %}">Записавшиеся студенты</a></li>
-            <li><a href="#contact">Преподаватели</a></li>
+            <li><a href="{% url "store:teachers" %}">Преподаватели</a></li>
           </ul>
         </div>
       </div>
@@ -70,6 +70,11 @@
         	<td>{{ form.sectionStudent}}</td>
         	<td>{{ form.sectionStudent.errors }}</td>
         	</tr>
+            <tr>
+            <td>{{ form.contStudent.label_tag }}</td>
+            <td>{{ form.contStudent}}</td>
+            <td>{{ form.contStudent.errors }}</td>
+            </tr>
             <tr>
             <td> <div id="editbutton">
                 <input type="submit" value="Сохранить">

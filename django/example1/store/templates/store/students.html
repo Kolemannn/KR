@@ -29,13 +29,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Дневник занятий</a>
+          <a class="navbar-brand" href="{% url "store:users" %}">Выход</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="{% url "store:groups" %}">Список секций</a></li>
             <li><a href="{% url "store:students" %}">Записавшиеся студенты</a></li>
-            <li><a href="#contact">Преподаватели</a></li>
+           <li><a href="{% url "store:teachers" %}">Преподаватели</a></li>
           </ul>
         </div>
       </div>
@@ -45,8 +45,7 @@
         <span id="1"><h2>Список студентов</h2></span>
         <p class="lead"> 
             {% for s in allstudents %}
-                    <div class="list-group">
-                    {{s.fioStudent}} <a href="{% url "store:student" s.pk %}" class="list-group-item">Просмотреть</a>
+                    <div class="list-group"> {{s.fioStudent}}&nbsp; записан в секцию &nbsp;&nbsp;{{s.sectionStudent}} <a href="{% url "store:student" s.pk %}" class="list-group-item">Просмотреть</a>
                           <a href="{% url "store:studentedit" s.pk %}" class="list-group-item" >Редактировать</a>
                     </div>
             {% endfor %}

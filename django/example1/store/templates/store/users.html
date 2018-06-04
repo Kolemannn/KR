@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="{% static 'others/main.css' %}">
         <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
         <link href="jumbotron-narrow.css" rel="stylesheet">
-        <title>Студенты</title>
+        <title>Спортивные секции</title>
     </head>
     <bode>
     <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
@@ -29,42 +29,34 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-         <a class="navbar-brand" href="{% url "store:users" %}">Выход</a>
+          <a class="navbar-brand" href="#">Дневник занятий</a>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="{% url "store:groups" %}">Список секций</a></li>
-            <li><a href="{% url "store:students" %}">Записавшиеся студенты</a></li>
-            <li><a href="{% url "store:teachers" %}">Преподаватели</a></li>
-          </ul>
+          
         </div>
       </div>
     </div>
     <div class="container">
       <div class="jumbotron">
         <p class="lead"> 
-            <table class="studentview">
-            <tr><td>Название секции</td><td>{{g.title}}</td></tr>
-            <tr><td>Тренер</td><td>{{g.teacher}}</td></tr>
-            <tr><td>Время проведения тренировок</td><td>{{g.datetime}}</td></tr>
-            <tr><td>Уровень</td><td>{{g.level}}</td></tr>
-            </table>
-             <div>
-             <h3 style="text-align: center;">Студенты в секции</h3>
-             {% for s in allst %}
-                    <ul class="pager"><span class="fio">{{s.fioStudent}}</span> 
-                      <li><a href="{% url "store:student" s.pk %}" >Просмотреть</a></li>
-                      <li><a href="{% url "store:studentedit" s.pk %}" >Редактировать</a></li>
-                    </ul>    
-            {% endfor %}
-            </div>
-      
+           <ul class="nav navbar-nav">
+            <li><a href="{% url "store:students" %}">Вы студент</a></li>
+            <li><a href="{% url "store:groups" %}">Вы преподаватель</a></li>
+            <li><a href="{% url "store:userManager" %}">Вы руководитель</a></li>
+          </ul>
+        </p> 
       </div>
-      <ul class="pager">
-          <li><a href="{% url "store:groups" %}">Назад к списку секций</a></li>
-      </ul> 
-      <div class="footer">
-     <p>&copy; ИУ5-23М Цыберный Н.Н 2018</p>
+      <div class="row marketing">
+        <div class="col-lg-6">
+            
+        </div>
+        <div class="col-lg-6">
+        </div>
       </div>
+    
+    </div>
+    <div class="footer">
+      <p>&copy; ИУ5-23М Цыберный Н.Н 2018</p>
+    </div>
     </bode>
 </html>    

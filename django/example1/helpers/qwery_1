@@ -1,0 +1,65 @@
+Студенты, факультета ИУ-5, посетившие занятия 2018-05-30
+
+In [49]: att = sm.Attendance.objects.filter(attendance = True)
+
+In [50]: att = att.filter(studentAttend__faculty = "ИУ-5")
+
+In [51]: att = att.filter(date = '2018-05-30')
+
+In [52]: att
+Out[52]: [<Attendance: True>]
+
+In [53]: att[0].date
+Out[53]: datetime.date(2018, 5, 30)
+
+In [54]: att[0].studentAttend
+Out[54]: <Student: Мамедов>
+
+Студенты секции Бокс факультета ИУ-5,
+
+n [56]: st= sm.Student.objects.filter(sectionStudent__title="Бокс")
+
+In [57]: st.count()
+Out[57]: 6
+
+In [58]: st[2].fioStudent
+Out[58]: 'Цыберный'
+
+In [59]: for s in st: s.fioStudent
+
+In [60]: for s in st:
+    ...:     print(s.fioStudent)
+    ...:     
+Литвинов
+Краснов
+Цыберный
+Баринов
+Завьялов
+Мамедов
+
+In [61]: 
+
+
+Есть ли занятые ОИ в понедельник и в какой секции
+
+In [80]: sec = sm.Section.objects.filter(datetime__contains = "пн")
+
+In [81]: sec = sec.filter(teacher__trackRecord__contains = "Чемпион ОИ")
+
+In [83]: sec[0].title
+Out[83]: 'Борьба'
+
+
+n [1]: from helpers.visitor2  import *
+
+In [2]: spy = JamesBond()
+
+In [3]: hq = Headquarters("пн","Чемпион ОИ")
+
+In [4]: base = MilitaryBase(True,"ИУ-5", '2018-05-30')
+
+In [5]: base.accept(spy)
+Мамедов
+
+In [6]: hq.accept(spy)
+Борьба

@@ -44,7 +44,7 @@
       <div class="jumbotron">
         <p class="lead"> 
             {% for g in allgroups %}
-                    <div class="list-group"> <span class="sectitle">{{g.title}}   уровень {{g.level}}   преподаватель  {{g.teacher}}</span>
+                    <div class="list-group"> <span class="sectitle">{{g.title}}</span>
                         <a href="{% url "store:group" g.pk %}" class="list-group-item">Просмотреть</a>
                         <a href="{% url "store:groupedit" g.pk %}" class="list-group-item" >Редактировать</a>
                     </div>
@@ -54,14 +54,82 @@
       </div>
       <div class="row marketing">
         <div class="col-lg-6">
-            <a href="{% url "store:groupcreate" %}" class="list-group-item">Зарегистрировать секцию</a>
+        <form method="POST">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        <table class="studentview" id="edit">
+            <tr>
+            <td>{{ form.attendance.label_tag }}</td>
+            <td>{{ form.attendance}}</td>
+            <td>{{ form.attendance.errors }}</td>
+            </tr>
+            <tr>
+            <td>{{ form.faculty.label_tag }}</td>
+            <td>{{ form.faculty}}</td>
+            <td>{{ form.faculty.errors }}</td>
+            </tr>
+            <tr>
+            <td>{{ form.date.label_tag }}</td>
+            <td>{{ form.date}}</td>
+            <td>{{ form.date.errors }}</td>
+            </tr>
+            <td> <div id="editbutton">
+                <input type="submit" value="Показать"> 
+                    </div>     
+            </td>
+            </tr>
+        </table>       
+    </form>
         </div>
         <div class="col-lg-6">
+            {% for a in att %}
+             <table class="attendance">
+                <tr><td>{{a.date}} &nbsp;&nbsp;{{a.studentAttend}}</td></tr>
+            </table>
+        
+            {% endfor %}
+        
         </div>
       </div>
-    
+      <br>
+      <br>
+       <div class="row marketing">
+        <div class="col-lg-6">
+         <form method="POST">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        <table class="studentview" id="edit">
+            <tr>
+            <td>{{ form_1.datetime.label_tag }}</td>
+            <td>{{ form_1.datetime}}</td>
+            <td>{{ form_1.datetime.errors }}</td>
+            </tr>
+            <tr>
+            <td>{{ form_1.trackRecord.label_tag }}</td>
+            <td>{{ form_1.trackRecord}}</td>
+            <td>{{ form_1.trackRecord.errors }}</td>
+            </tr>
+            <td> <div id="editbutton">
+                <input type="submit" value="Показать"> 
+                    </div>     
+            </td>
+            </tr>
+        </table>       
+    </form>
+        </div>
+        <div class="col-lg-6">
+        {% for s in sec %}
+             <table class="attendance">
+                <tr><td>{{s.title}} &nbsp;&nbsp;{{s.teacher}}  </td></tr>
+            </table>
+          {% endfor %}
+        </div>
+        </div>
     </div>
+     <ul class="pager">
+                      <li><a href="{% url "store:userManager" %}">Назад к отчётам</a></li>
     <div class="footer">
+    <br>
       <p>&copy; ИУ5-23М Цыберный Н.Н 2018</p>
     </div>
     </bode>

@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="{% static 'others/main.css' %}">
         <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
         <link href="jumbotron-narrow.css" rel="stylesheet">
-        <title>Студент {{student.fioStudent}}</title>
+        <title>Регистрация секции</title>
     </head>
     <bode>
     <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
@@ -35,7 +35,7 @@
           <ul class="nav navbar-nav">
             <li><a href="{% url "store:groups" %}">Список секций</a></li>
             <li><a href="{% url "store:students" %}">Записавшиеся студенты</a></li>
-            <li><a href="#contact">Преподаватели</a></li>
+            <li><a href="{% url "store:teachers" %}">Преподаватели</a></li>
           </ul>
         </div>
       </div>
@@ -78,14 +78,6 @@
             </td>
             </tr>
         </table>       
-    </form>
-    <form action="{% url "store:groupdelete" g.pk%}" method="DELETE">
-    	{% csrf_token %}
-        <table class="studentview" id="delete">
-
-            <tr><td><button formmethod="DELETE">Удалить</button></td></tr>
-        </table>
-    	
     </form>
      <ul class="pager">
                       <li><a href="{% url "store:groups" %}">Назад к списку секций</a></li>

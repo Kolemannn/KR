@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="{% static 'others/main.css' %}">
         <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
         <link href="jumbotron-narrow.css" rel="stylesheet">
-        <title>Студент {{student.fioStudent}}</title>
+        <title>Регистрация преподавателя</title>
     </head>
     <bode>
     <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
@@ -29,13 +29,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{% url "store:users" %}">Выход</a>
+         <a class="navbar-brand" href="{% url "store:users" %}">Выход</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="{% url "store:groups" %}">Список секций</a></li>
             <li><a href="{% url "store:students" %}">Записавшиеся студенты</a></li>
-            <li><a href="#contact">Преподаватели</a></li>
+            <li><a href="{% url "store:teachers" %}">Преподаватели</a></li>
           </ul>
         </div>
       </div>
@@ -51,25 +51,30 @@
     	{{ form.non_field_errors }}
         <table class="studentview" id="edit">
         	<tr>
-        	<td>{{ form.title.label_tag }}</td>
-        	<td>{{ form.title}}</td>
-        	<td>{{ form.title.errors }}</td>
+        	<td>{{ form.fioTeacher.label_tag }}</td>
+        	<td>{{ form.fioTeacher}}</td>
+        	<td>{{ form.fioTeacher.errors }}</td>
         	</tr>
         	<tr>
-        	<td>{{ form.teacher.label_tag }}</td>
-        	<td>{{ form.teacher}}</td>
-        	<td>{{ form.teacher.errors }}</td>
+        	<td>{{ form.sport.label_tag }}</td>
+        	<td>{{ form.sport}}</td>
+        	<td>{{ form.sport.errors }}</td>
         	</tr>
         	<tr>
-        	<td>{{ form.datetime.label_tag }}</td>
-        	<td>{{ form.datetime}}</td>
-        	<td>{{ form.datetime.errors }}</td>
+        	<td>{{ form.contTeacher.label_tag }}</td>
+        	<td>{{ form.contTeacher}}</td>
+        	<td>{{ form.contTeacher.errors }}</td>
         	</tr>
         	<tr>
-        	<td>{{ form.level.label_tag }}</td>
-        	<td>{{ form.level}}</td>
-        	<td>{{ form.level.errors }}</td>
+        	<td>{{ form.trackRecord.label_tag }}</td>
+        	<td>{{ form.trackRecord}}</td>
+        	<td>{{ form.trackRecord.errors }}</td>
         	</tr>
+            <tr>
+            <td>{{ form.grade.label_tag }}</td>
+            <td>{{ form.grade}}</td>
+            <td>{{ form.grade.errors }}</td>
+            </tr>
              <tr>
             <td> <div id="editbutton">
                 <input type="submit" value="Сохранить">
@@ -79,16 +84,8 @@
             </tr>
         </table>       
     </form>
-    <form action="{% url "store:groupdelete" g.pk%}" method="DELETE">
-    	{% csrf_token %}
-        <table class="studentview" id="delete">
-
-            <tr><td><button formmethod="DELETE">Удалить</button></td></tr>
-        </table>
-    	
-    </form>
      <ul class="pager">
-                      <li><a href="{% url "store:groups" %}">Назад к списку секций</a></li>
+                      <li><a href="{% url "store:teachers" %}">Назад к списку преподавателей</a></li>
     
         </ul> 
         </div>

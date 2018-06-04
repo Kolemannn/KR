@@ -19,9 +19,6 @@ class GroupGateway(object):
 		self.RowGroup = []
 
 
-	def getIid(self):
-		return self.iid
-
 	def getRowGroup(self):
 		self.RowGroup = sm.Section.objects.get( pk = self.iid )
 		return self.RowGroup
@@ -30,28 +27,9 @@ class GroupGateway(object):
 		self.RowGroup = sm.Section.objects.get( pk = self.iid )
 		self.RowGroup.delete()
 
-	def getIid (self):
-		return self.iid
-    
-	def setTitle (self):
-		self.RowGroup = sm.Section.objects.get( pk = self.iid )
-		self.RowGroup.title = self.title
-		self.RowGroup.save()
-
-	def setTeacher (self):
-		self.RowGroup = sm.Section.objects.get( pk = self.iid )
-		self.RowGroup.teacher = self.teacher
-		self.RowGroup.save()
-
-	def setDatetime (self):
-		self.RowGroup = sm.Section.objects.get( pk = self.iid )
-		self.RowGroup.datetime = self.datetime
-		self.RowGroup.save()
-
-	def setLevel (self):
-		self.RowGroup = sm.Section.objects.get( pk = self.iid )
-		self.RowGroup.level = self.level
-		self.RowGroup.save()
+	def editRowGroup (self):
+		sm.Section.objects.filter(id = self.iid).update(title = self.title,teacher = self.teacher, datetime = self.datetime, level = self.level)
+		
 
 ##################################################################################################
 
@@ -65,13 +43,13 @@ class StudentGateway(object):
 		if "faculty" in kwargs:
 			self.faculty = kwargs["faculty"]
 		if "healthGroup" in kwargs:
-			self.healthGroup = kwargs["healthGroup"]
+			self.healthGroup = int(kwargs["healthGroup"])
 		if "sectionStudent" in kwargs:
 			self.sectionStudent = kwargs["sectionStudent"]
+		if "contStudent" in kwargs:
+			self.contStudent = kwargs["contStudent"]
 		self.RowStudent = []
 
-	def getIid (self):
-		return self.iid
 
 	def findRowStudent(self):
 		self.RowStudent = sm.Student.objects.filter( sectionStudent_id__exact = self.sectionStudent)
@@ -86,25 +64,8 @@ class StudentGateway(object):
 		self.RowStudent.delete()
 	
     
-	def setFioStudent (self):
-		self.RowStudent = sm.Student.objects.get( pk = self.iid )
-		self.RowStudent.fioStudent = self.fioStudent
-		self.RowStudent.save()
-
-	def setFaculty (self):
-		self.RowStudent = sm.Student.objects.get( pk = self.iid )
-		self.RowStudent.faculty = self.faculty
-		self.RowStudent.save()
-
-	def setHealthGroup (self):
-		self.RowStudent = sm.Student.objects.get( pk = self.iid )
-		self.RowStudent.healthGroup = self.healthGroup
-		self.RowStudent.save()
-
-	def setSectionStudent (self):
-		self.RowStudent = sm.Student.objects.get( pk = self.iid )
-		self.RowStudent.sectionStudent = self.sectionStudent
-		self.RowStudent.save()
+	def editRowStudent(self):
+		sm.Student.objects.filter( pk = self.iid ).update(fioStudent = self.fioStudent, faculty = self.faculty,healthGroup = self.healthGroup,sectionStudent = self.sectionStudent,contStudent = self.contStudent )
 
 ##################################################################################################
 
@@ -118,7 +79,9 @@ class AttendanceGateway(object):
 		if "attendance" in kwargs:
 			self.attendance = kwargs["attendance"]
 		if "studentAttend" in kwargs:
-			self.studentAttend = int(kwargs["studentAttend"])
+			self.studentAttend = kwargs["studentAttend"]
+		if "reason" in kwargs:
+			self.reason = kwargs["reason"]
 		self.RowAttendance = []
 
 	def findRowAttendan(self):
@@ -134,19 +97,46 @@ class AttendanceGateway(object):
 		self.RowAttendance.delete()
 
 	def createRowAttendance (self):
-		pass
+		self.RowAttendance = sm.Attendance(date = self.date,attendance = self.attendance, studentAttend = self.studentAttend, reason = self.reason)
+		self.RowAttendance.save()
     
-	def setDate (self):
-		self.RowAttendance = sm.Attendance.objects.get( pk = self.iid )
-		self.RowAttendance.date = self.date
-		self.RowAttendance.save()
 
-	def setAttendance (self):
-		self.RowAttendance = sm.Attendance.objects.get( pk = self.iid )
-		self.RowAttendance.attendance = self.attendance
-		self.RowAttendance.save()
+###############################################################################################3
 
-	def setStudentAttend (self):
-		self.RowAttendance = sm.Attendance.objects.get( pk = self.iid )
-		self.RowAttendance.studentAttend = self.studentAttend
-		self.RowAttendance.save()
+class TeacherGateway(object):
+	
+	def __init__(self, **kwargs):
+		if "iid" in kwargs:
+			self.iid = int(kwargs["iid"])
+		if "fioTeacher" in kwargs:
+			self.fioTeacher = kwargs["fioTeacher"]
+		if "sport" in kwargs:
+			self.sport = kwargs["sport"]
+		if "contTeacher" in kwargs:
+			self.contTeacher = (kwargs["contTeacher"])
+		if "trackRecord" in kwargs:
+			self.trackRecord = (kwargs["trackRecord"])
+		if "grade" in kwargs:
+			self.grade = int(kwargs["grade"])
+		self.RowTeacher = []
+
+
+	def getRowTeacher(self):
+		self.RowTeacher = sm.Teacher.objects.get( pk = self.iid )
+		return self.RowTeacher
+
+	def deleteRowTeacher (self):
+		self.RowTeacher = sm.Teacher.objects.get( pk = self.iid )
+		self.RowTeacher.delete()
+
+	def createRowTeacher (self):
+		self.RowTeacher = sm.Teacher(fioTeacher = self.fioTeacher,sport = self.sport, contTeacher = self.contTeacher,trackRecord = self.trackRecord, grade = self.grade)
+		self.RowTeacher.save()
+
+
+	def editRowTeacher(self):
+		sm.Teacher.objects.filter(pk = self.iid).update(fioTeacher = self.fioTeacher,sport = self.sport, contTeacher = self.contTeacher,trackRecord =  self.trackRecord,grade = self.grade )
+
+
+
+    

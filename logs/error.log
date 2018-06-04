@@ -1,0 +1,576 @@
+[Thu Dec 21 16:58:03.466498 2017] [autoindex:error] [pid 2189:tid 140436859016960] [client 127.0.0.1:41822] AH01276: Cannot serve directory /home/nikki/Work/example.loc/SITE/httpd/: No matching DirectoryIndex (index.html,index.cgi,index.pl,index.php,index.xhtml,index.htm) found, and server-generated directory index forbidden by Options directive
+[Thu Dec 21 19:10:46.851417 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984] mod_wsgi (pid=9976): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:10:46.864120 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984] mod_wsgi (pid=9976): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:10:46.865151 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984] Traceback (most recent call last):
+[Thu Dec 21 19:10:46.865225 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:10:46.865231 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]     application = get_wsgi_application()
+[Thu Dec 21 19:10:46.865241 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:10:46.865246 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]     django.setup(set_prefix=False)
+[Thu Dec 21 19:10:46.865256 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:10:46.865261 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:10:46.865269 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:10:46.865274 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]     self._setup(name)
+[Thu Dec 21 19:10:46.865283 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:10:46.865287 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:10:46.865296 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:10:46.865300 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:10:46.865309 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:10:46.865313 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:10:46.865322 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:10:46.865330 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:10:46.865339 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:10:46.865348 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:10:46.865356 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:10:46.865382 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:10:46.865391 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:10:46.865414 2017] [wsgi:error] [pid 9976:tid 139848934508288] [remote 127.0.0.1:41984] ImportError: No module named 'example1'
+[Thu Dec 21 19:12:11.817234 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986] mod_wsgi (pid=10089): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:12:11.817360 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986] mod_wsgi (pid=10089): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:12:11.818082 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986] Traceback (most recent call last):
+[Thu Dec 21 19:12:11.818145 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:12:11.818152 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]     application = get_wsgi_application()
+[Thu Dec 21 19:12:11.818160 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:12:11.818165 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]     django.setup(set_prefix=False)
+[Thu Dec 21 19:12:11.818174 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:12:11.818178 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:12:11.818187 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:12:11.818191 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]     self._setup(name)
+[Thu Dec 21 19:12:11.818199 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:12:11.818203 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:12:11.818322 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:12:11.818330 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:12:11.818340 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:12:11.818344 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:12:11.818352 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:12:11.818361 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:12:11.818369 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:12:11.818390 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:12:11.818399 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:12:11.818406 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:12:11.818414 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:12:11.818436 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41986] ImportError: No module named 'example1'
+[Thu Dec 21 19:12:58.911370 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990] mod_wsgi (pid=10089): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:12:58.911461 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990] mod_wsgi (pid=10089): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:12:58.911662 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990] Traceback (most recent call last):
+[Thu Dec 21 19:12:58.911717 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:12:58.911722 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]     application = get_wsgi_application()
+[Thu Dec 21 19:12:58.911731 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:12:58.911736 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]     django.setup(set_prefix=False)
+[Thu Dec 21 19:12:58.911745 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:12:58.911749 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:12:58.911758 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:12:58.911762 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]     self._setup(name)
+[Thu Dec 21 19:12:58.911770 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:12:58.911775 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:12:58.911783 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:12:58.911787 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:12:58.911795 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:12:58.911800 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:12:58.911808 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:12:58.911843 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:12:58.911853 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:12:58.911861 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:12:58.911868 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:12:58.911876 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:12:58.911883 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:12:58.911903 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41990] ImportError: No module named 'example1'
+[Thu Dec 21 19:13:15.540439 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992] mod_wsgi (pid=10089): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:13:15.540634 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992] mod_wsgi (pid=10089): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:13:15.540847 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992] Traceback (most recent call last):
+[Thu Dec 21 19:13:15.540906 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:13:15.540912 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]     application = get_wsgi_application()
+[Thu Dec 21 19:13:15.540922 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:13:15.540927 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]     django.setup(set_prefix=False)
+[Thu Dec 21 19:13:15.540936 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:13:15.540941 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:13:15.540950 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:13:15.540955 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]     self._setup(name)
+[Thu Dec 21 19:13:15.540963 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:13:15.540968 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:13:15.540999 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:13:15.541008 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:13:15.541018 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:13:15.541036 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:13:15.541045 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:13:15.541054 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:13:15.541062 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:13:15.541070 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:13:15.541079 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:13:15.541087 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:13:15.541095 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:13:15.541116 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41992] ImportError: No module named 'example1'
+[Thu Dec 21 19:14:47.065439 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994] mod_wsgi (pid=10089): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:14:47.065543 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994] mod_wsgi (pid=10089): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:14:47.065789 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994] Traceback (most recent call last):
+[Thu Dec 21 19:14:47.065852 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:14:47.065857 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]     application = get_wsgi_application()
+[Thu Dec 21 19:14:47.065867 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:14:47.065872 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]     django.setup(set_prefix=False)
+[Thu Dec 21 19:14:47.065881 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:14:47.065885 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:14:47.065895 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:14:47.065899 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]     self._setup(name)
+[Thu Dec 21 19:14:47.065908 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:14:47.065913 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:14:47.065921 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:14:47.065946 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:14:47.065955 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:14:47.065959 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:14:47.065968 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:14:47.065976 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:14:47.065984 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:14:47.065992 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:14:47.066000 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:14:47.066008 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:14:47.066016 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:14:47.066039 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:41994] ImportError: No module named 'example1'
+[Thu Dec 21 19:14:49.465399 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996] mod_wsgi (pid=10089): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:14:49.465477 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996] mod_wsgi (pid=10089): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:14:49.465688 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996] Traceback (most recent call last):
+[Thu Dec 21 19:14:49.465745 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:14:49.465750 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]     application = get_wsgi_application()
+[Thu Dec 21 19:14:49.465759 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:14:49.465763 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]     django.setup(set_prefix=False)
+[Thu Dec 21 19:14:49.465772 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:14:49.465776 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:14:49.465784 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:14:49.465788 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]     self._setup(name)
+[Thu Dec 21 19:14:49.465795 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:14:49.465813 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:14:49.465821 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:14:49.465825 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:14:49.465833 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:14:49.465837 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:14:49.465844 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:14:49.465852 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:14:49.465860 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:14:49.465868 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:14:49.465875 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:14:49.465883 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:14:49.465891 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:14:49.465910 2017] [wsgi:error] [pid 10089:tid 140057038079744] [remote 127.0.0.1:41996] ImportError: No module named 'example1'
+[Thu Dec 21 19:15:08.160065 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006] mod_wsgi (pid=10089): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:15:08.160166 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006] mod_wsgi (pid=10089): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:15:08.160375 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006] Traceback (most recent call last):
+[Thu Dec 21 19:15:08.160433 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:15:08.160438 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]     application = get_wsgi_application()
+[Thu Dec 21 19:15:08.160447 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:15:08.160452 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]     django.setup(set_prefix=False)
+[Thu Dec 21 19:15:08.160460 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:15:08.160465 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:15:08.160473 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:15:08.160494 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]     self._setup(name)
+[Thu Dec 21 19:15:08.160503 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:15:08.160507 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:15:08.160516 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:15:08.160520 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:15:08.160529 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:15:08.160533 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:15:08.160541 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:15:08.160549 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:15:08.160558 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:15:08.160566 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:15:08.160574 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:15:08.160582 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:15:08.160590 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:15:08.160611 2017] [wsgi:error] [pid 10089:tid 140056920581888] [remote 127.0.0.1:42006] ImportError: No module named 'example1'
+[Thu Dec 21 19:19:47.938481 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012] mod_wsgi (pid=10261): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:19:47.938603 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012] mod_wsgi (pid=10261): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:19:47.939334 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012] Traceback (most recent call last):
+[Thu Dec 21 19:19:47.939416 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:19:47.939423 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]     application = get_wsgi_application()
+[Thu Dec 21 19:19:47.939432 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:19:47.939436 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]     django.setup(set_prefix=False)
+[Thu Dec 21 19:19:47.939445 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:19:47.939463 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:19:47.939471 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:19:47.939475 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]     self._setup(name)
+[Thu Dec 21 19:19:47.939483 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:19:47.939487 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:19:47.939494 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:19:47.939498 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:19:47.939506 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:19:47.939510 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:19:47.939517 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:19:47.939525 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:19:47.939533 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:19:47.939541 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:19:47.939548 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:19:47.939556 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:19:47.939564 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:19:47.939584 2017] [wsgi:error] [pid 10261:tid 139844713228032] [remote 127.0.0.1:42012] ImportError: No module named 'example1'
+[Thu Dec 21 19:23:15.276154 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016] mod_wsgi (pid=10394): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:23:15.276279 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016] mod_wsgi (pid=10394): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:23:15.277180 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016] Traceback (most recent call last):
+[Thu Dec 21 19:23:15.277253 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:23:15.277260 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]     application = get_wsgi_application()
+[Thu Dec 21 19:23:15.277269 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:23:15.277287 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]     django.setup(set_prefix=False)
+[Thu Dec 21 19:23:15.277296 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:23:15.277301 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:23:15.277310 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:23:15.277314 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]     self._setup(name)
+[Thu Dec 21 19:23:15.277322 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:23:15.277327 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:23:15.277335 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:23:15.277339 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:23:15.277347 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:23:15.277352 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:23:15.277360 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:23:15.278376 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:23:15.278423 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:23:15.278436 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:23:15.278444 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:23:15.278452 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:23:15.278460 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:23:15.278496 2017] [wsgi:error] [pid 10394:tid 140524566619904] [remote 127.0.0.1:42016] ImportError: No module named 'example1'
+[Thu Dec 21 19:23:17.480073 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018] mod_wsgi (pid=10394): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:23:17.480158 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018] mod_wsgi (pid=10394): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:23:17.480403 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018] Traceback (most recent call last):
+[Thu Dec 21 19:23:17.480463 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:23:17.480481 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]     application = get_wsgi_application()
+[Thu Dec 21 19:23:17.480490 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:23:17.480494 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]     django.setup(set_prefix=False)
+[Thu Dec 21 19:23:17.480502 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:23:17.480506 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:23:17.480514 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:23:17.480518 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]     self._setup(name)
+[Thu Dec 21 19:23:17.480526 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:23:17.480530 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:23:17.480537 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:23:17.480542 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:23:17.480549 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:23:17.480555 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:23:17.480565 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:23:17.480575 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:23:17.480584 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:23:17.480594 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:23:17.480602 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:23:17.480610 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:23:17.480617 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:23:17.480638 2017] [wsgi:error] [pid 10394:tid 140524533049088] [remote 127.0.0.1:42018] ImportError: No module named 'example1'
+[Thu Dec 21 19:27:24.472837 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028] mod_wsgi (pid=10519): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:27:24.472990 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028] mod_wsgi (pid=10519): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:27:24.473703 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028] Traceback (most recent call last):
+[Thu Dec 21 19:27:24.473765 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:27:24.473770 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]     application = get_wsgi_application()
+[Thu Dec 21 19:27:24.473779 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:27:24.473783 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]     django.setup(set_prefix=False)
+[Thu Dec 21 19:27:24.473791 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:27:24.473796 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:27:24.473804 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:27:24.473808 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]     self._setup(name)
+[Thu Dec 21 19:27:24.473815 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:27:24.473820 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:27:24.473827 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:27:24.473831 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:27:24.473839 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:27:24.473843 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:27:24.473850 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:27:24.473858 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:27:24.473875 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:27:24.473891 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:27:24.473899 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:27:24.473907 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:27:24.473915 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:27:24.473936 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42028] ImportError: No module named 'example1'
+[Thu Dec 21 19:27:24.675470 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030] mod_wsgi (pid=10519): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:27:24.675559 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030] mod_wsgi (pid=10519): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:27:24.675758 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030] Traceback (most recent call last):
+[Thu Dec 21 19:27:24.675814 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:27:24.675818 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]     application = get_wsgi_application()
+[Thu Dec 21 19:27:24.675827 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:27:24.675831 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]     django.setup(set_prefix=False)
+[Thu Dec 21 19:27:24.675839 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:27:24.675843 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:27:24.675851 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:27:24.675855 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]     self._setup(name)
+[Thu Dec 21 19:27:24.675863 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:27:24.675867 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:27:24.675874 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:27:24.675878 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:27:24.675886 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:27:24.675890 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:27:24.675898 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:27:24.675906 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:27:24.675913 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:27:24.675921 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:27:24.675945 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:27:24.675963 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:27:24.675972 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:27:24.676002 2017] [wsgi:error] [pid 10519:tid 139748731381504] [remote 127.0.0.1:42030] ImportError: No module named 'example1'
+[Thu Dec 21 19:27:24.704005 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032] mod_wsgi (pid=10519): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:27:24.704089 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032] mod_wsgi (pid=10519): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:27:24.704307 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032] Traceback (most recent call last):
+[Thu Dec 21 19:27:24.704369 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:27:24.704375 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]     application = get_wsgi_application()
+[Thu Dec 21 19:27:24.704384 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:27:24.704389 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]     django.setup(set_prefix=False)
+[Thu Dec 21 19:27:24.704398 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:27:24.704403 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:27:24.704412 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:27:24.704417 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]     self._setup(name)
+[Thu Dec 21 19:27:24.704425 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:27:24.704430 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:27:24.704439 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:27:24.704443 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:27:24.704452 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:27:24.704457 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:27:24.704466 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:27:24.704564 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:27:24.704574 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:27:24.704583 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:27:24.704592 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:27:24.704620 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:27:24.704629 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:27:24.704652 2017] [wsgi:error] [pid 10519:tid 139748832093952] [remote 127.0.0.1:42032] ImportError: No module named 'example1'
+[Thu Dec 21 19:32:04.243196 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036] mod_wsgi (pid=10710): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:32:04.243837 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036] mod_wsgi (pid=10710): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:32:04.244632 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036] Traceback (most recent call last):
+[Thu Dec 21 19:32:04.244824 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:32:04.244834 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]     application = get_wsgi_application()
+[Thu Dec 21 19:32:04.244844 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:32:04.244849 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]     django.setup(set_prefix=False)
+[Thu Dec 21 19:32:04.244858 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:32:04.244863 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:32:04.244872 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:32:04.244876 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]     self._setup(name)
+[Thu Dec 21 19:32:04.244884 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:32:04.244889 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:32:04.244897 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:32:04.244901 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:32:04.244909 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:32:04.244914 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:32:04.244922 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:32:04.244930 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:32:04.244938 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:32:04.244958 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:32:04.244967 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:32:04.244974 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:32:04.244982 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:32:04.245004 2017] [wsgi:error] [pid 10710:tid 140527051650816] [client 127.0.0.1:42036] ImportError: No module named 'example1'
+[Thu Dec 21 19:32:47.938818 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038] mod_wsgi (pid=10711): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 19:32:47.938928 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038] mod_wsgi (pid=10711): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 19:32:47.939700 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038] Traceback (most recent call last):
+[Thu Dec 21 19:32:47.939764 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 19:32:47.939769 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]     application = get_wsgi_application()
+[Thu Dec 21 19:32:47.939778 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 19:32:47.939782 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]     django.setup(set_prefix=False)
+[Thu Dec 21 19:32:47.939791 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 19:32:47.939796 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 19:32:47.939804 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 19:32:47.939808 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]     self._setup(name)
+[Thu Dec 21 19:32:47.939816 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 19:32:47.939821 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 19:32:47.939828 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 19:32:47.939833 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 19:32:47.939840 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 19:32:47.939845 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 19:32:47.939853 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:32:47.939874 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:32:47.939883 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 19:32:47.939890 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 19:32:47.939898 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 19:32:47.939906 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 19:32:47.939913 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 19:32:47.939934 2017] [wsgi:error] [pid 10711:tid 140527051650816] [client 127.0.0.1:42038] ImportError: No module named 'example1'
+[Thu Dec 21 20:01:24.189693 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140] mod_wsgi (pid=10959): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 20:01:24.189823 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140] mod_wsgi (pid=10959): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 20:01:24.190560 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140] Traceback (most recent call last):
+[Thu Dec 21 20:01:24.190624 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 20:01:24.190630 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]     application = get_wsgi_application()
+[Thu Dec 21 20:01:24.190639 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 20:01:24.190644 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]     django.setup(set_prefix=False)
+[Thu Dec 21 20:01:24.190653 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 20:01:24.190658 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 20:01:24.190666 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 20:01:24.190671 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]     self._setup(name)
+[Thu Dec 21 20:01:24.190679 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 20:01:24.190684 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 20:01:24.190692 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 20:01:24.190696 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 20:01:24.190705 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 20:01:24.190723 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 20:01:24.190731 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:01:24.190739 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:01:24.190748 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 20:01:24.190756 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 20:01:24.190764 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:01:24.190772 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:01:24.190780 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 20:01:24.190801 2017] [wsgi:error] [pid 10959:tid 140014214162176] [client 127.0.0.1:42140] ImportError: No module named 'example1'
+[Thu Dec 21 20:01:25.975158 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142] mod_wsgi (pid=10958): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 20:01:25.975269 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142] mod_wsgi (pid=10958): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 20:01:25.976033 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142] Traceback (most recent call last):
+[Thu Dec 21 20:01:25.976095 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 20:01:25.976101 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]     application = get_wsgi_application()
+[Thu Dec 21 20:01:25.976110 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 20:01:25.976115 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]     django.setup(set_prefix=False)
+[Thu Dec 21 20:01:25.976123 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 20:01:25.976127 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 20:01:25.976136 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 20:01:25.976180 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]     self._setup(name)
+[Thu Dec 21 20:01:25.976192 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 20:01:25.976196 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 20:01:25.976204 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 20:01:25.976221 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 20:01:25.976229 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 20:01:25.976234 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 20:01:25.976241 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:01:25.976249 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:01:25.976257 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 20:01:25.976265 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 20:01:25.976273 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:01:25.976281 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:01:25.976289 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 20:01:25.976311 2017] [wsgi:error] [pid 10958:tid 140014256125696] [client 127.0.0.1:42142] ImportError: No module named 'example1'
+[Thu Dec 21 20:07:43.744822 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148] mod_wsgi (pid=10959): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 20:07:43.744912 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148] mod_wsgi (pid=10959): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 20:07:43.745160 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148] Traceback (most recent call last):
+[Thu Dec 21 20:07:43.745243 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 20:07:43.745248 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]     application = get_wsgi_application()
+[Thu Dec 21 20:07:43.745258 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 20:07:43.745263 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]     django.setup(set_prefix=False)
+[Thu Dec 21 20:07:43.745271 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 20:07:43.745276 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 20:07:43.745285 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 20:07:43.745290 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]     self._setup(name)
+[Thu Dec 21 20:07:43.745298 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 20:07:43.745314 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 20:07:43.745322 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 20:07:43.745326 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 20:07:43.745334 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 20:07:43.745338 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 20:07:43.745346 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:07:43.745353 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:07:43.745361 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 20:07:43.745369 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 20:07:43.745377 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:07:43.745385 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:07:43.745392 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 20:07:43.745411 2017] [wsgi:error] [pid 10959:tid 140014205769472] [client 127.0.0.1:42148] ImportError: No module named 'example1'
+[Thu Dec 21 20:08:11.158584 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166] mod_wsgi (pid=10958): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 20:08:11.158672 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166] mod_wsgi (pid=10958): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 20:08:11.158903 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166] Traceback (most recent call last):
+[Thu Dec 21 20:08:11.158965 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 20:08:11.158970 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]     application = get_wsgi_application()
+[Thu Dec 21 20:08:11.158980 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 20:08:11.158984 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]     django.setup(set_prefix=False)
+[Thu Dec 21 20:08:11.158993 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 20:08:11.158998 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 20:08:11.159006 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 20:08:11.159024 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]     self._setup(name)
+[Thu Dec 21 20:08:11.159033 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 20:08:11.159037 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 20:08:11.159045 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 20:08:11.159049 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 20:08:11.159057 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 20:08:11.159061 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 20:08:11.159069 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:08:11.159078 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:08:11.159086 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 20:08:11.159094 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 20:08:11.159103 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:08:11.159111 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:08:11.159119 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 20:08:11.159138 2017] [wsgi:error] [pid 10958:tid 140014247732992] [client 127.0.0.1:42166] ImportError: No module named 'example1'
+[Thu Dec 21 20:09:35.888197 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170] mod_wsgi (pid=11185): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 20:09:35.888348 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170] mod_wsgi (pid=11185): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 20:09:35.889193 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170] Traceback (most recent call last):
+[Thu Dec 21 20:09:35.889266 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 20:09:35.889287 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]     application = get_wsgi_application()
+[Thu Dec 21 20:09:35.889299 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 20:09:35.889304 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]     django.setup(set_prefix=False)
+[Thu Dec 21 20:09:35.889314 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 20:09:35.889319 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 20:09:35.889341 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 20:09:35.889346 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]     self._setup(name)
+[Thu Dec 21 20:09:35.889354 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 20:09:35.889359 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 20:09:35.889367 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 20:09:35.889371 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 20:09:35.889379 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 20:09:35.889383 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 20:09:35.889391 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:09:35.889400 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:09:35.889409 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 20:09:35.889417 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 20:09:35.889426 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:09:35.889434 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:09:35.889442 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 20:09:35.889464 2017] [wsgi:error] [pid 11185:tid 140352030181120] [client 127.0.0.1:42170] ImportError: No module named 'example1'
+[Thu Dec 21 20:09:37.677425 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172] mod_wsgi (pid=11186): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 20:09:37.677804 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172] mod_wsgi (pid=11186): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 20:09:37.688834 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172] Traceback (most recent call last):
+[Thu Dec 21 20:09:37.688947 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 20:09:37.688954 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]     application = get_wsgi_application()
+[Thu Dec 21 20:09:37.688963 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 20:09:37.688967 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]     django.setup(set_prefix=False)
+[Thu Dec 21 20:09:37.688989 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 20:09:37.688994 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 20:09:37.689002 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 20:09:37.689007 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]     self._setup(name)
+[Thu Dec 21 20:09:37.689014 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 20:09:37.689019 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 20:09:37.689026 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 20:09:37.689030 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 20:09:37.689038 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 20:09:37.689042 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 20:09:37.689050 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:09:37.689058 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:09:37.689066 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 20:09:37.689099 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 20:09:37.689114 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:09:37.689122 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:09:37.689130 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 20:09:37.689155 2017] [wsgi:error] [pid 11186:tid 140352063751936] [client 127.0.0.1:42172] ImportError: No module named 'example1'
+[Thu Dec 21 20:12:52.348351 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176] mod_wsgi (pid=11299): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 20:12:52.348478 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176] mod_wsgi (pid=11299): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 20:12:52.351460 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176] Traceback (most recent call last):
+[Thu Dec 21 20:12:52.351566 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 20:12:52.351572 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]     application = get_wsgi_application()
+[Thu Dec 21 20:12:52.351599 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 20:12:52.351603 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]     django.setup(set_prefix=False)
+[Thu Dec 21 20:12:52.351612 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 20:12:52.351616 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 20:12:52.351755 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 20:12:52.351763 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]     self._setup(name)
+[Thu Dec 21 20:12:52.351771 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 20:12:52.351775 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 20:12:52.351783 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 20:12:52.351787 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 20:12:52.351794 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 20:12:52.351798 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 20:12:52.351806 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:12:52.351813 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:12:52.351821 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 20:12:52.351829 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 20:12:52.351837 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:12:52.351845 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:12:52.351852 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 20:12:52.351878 2017] [wsgi:error] [pid 11299:tid 140414839564032] [client 127.0.0.1:42176] ImportError: No module named 'example1'
+[Thu Dec 21 20:25:32.051281 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188] mod_wsgi (pid=11448): Target WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py' cannot be loaded as Python module.
+[Thu Dec 21 20:25:32.051421 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188] mod_wsgi (pid=11448): Exception occurred processing WSGI script '/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py'.
+[Thu Dec 21 20:25:32.052243 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188] Traceback (most recent call last):
+[Thu Dec 21 20:25:32.052324 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "/home/nikki/Work/example.loc/SITE/django/example1/example1/wsgi.py", line 16, in <module>
+[Thu Dec 21 20:25:32.052330 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]     application = get_wsgi_application()
+[Thu Dec 21 20:25:32.052340 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Dec 21 20:25:32.052344 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]     django.setup(set_prefix=False)
+[Thu Dec 21 20:25:32.052353 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 19, in setup
+[Thu Dec 21 20:25:32.052358 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Dec 21 20:25:32.052366 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+[Thu Dec 21 20:25:32.052370 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]     self._setup(name)
+[Thu Dec 21 20:25:32.052378 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 43, in _setup
+[Thu Dec 21 20:25:32.052383 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]     self._wrapped = Settings(settings_module)
+[Thu Dec 21 20:25:32.052391 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "/usr/local/lib/python3.5/dist-packages/django/conf/__init__.py", line 106, in __init__
+[Thu Dec 21 20:25:32.052395 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Dec 21 20:25:32.052403 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Thu Dec 21 20:25:32.052407 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Dec 21 20:25:32.052415 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:25:32.052424 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:25:32.052432 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+[Thu Dec 21 20:25:32.052440 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Thu Dec 21 20:25:32.052449 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Thu Dec 21 20:25:32.052457 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Thu Dec 21 20:25:32.052465 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188]   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+[Thu Dec 21 20:25:32.052487 2017] [wsgi:error] [pid 11448:tid 140044400011008] [client 127.0.0.1:42188] ImportError: No module named 'example1'

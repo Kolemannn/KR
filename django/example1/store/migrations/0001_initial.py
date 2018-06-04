@@ -11,11 +11,19 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
+            name='Attendance',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True, serialize=False)),
+                ('date', models.DateField()),
+                ('attendance', models.BooleanField()),
+                ('reason', models.CharField(max_length=255, default='Укажите причину')),
+            ],
+        ),
+        migrations.CreateModel(
             name='Section',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True, serialize=False)),
                 ('title', models.CharField(max_length=255, unique=True)),
-                ('teacher', models.CharField(max_length=255, null=True)),
                 ('datetime', models.CharField(max_length=255, null=True)),
                 ('level', models.IntegerField(default=0)),
             ],
@@ -23,11 +31,33 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Student',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True, serialize=False)),
                 ('fioStudent', models.CharField(max_length=255)),
                 ('faculty', models.CharField(max_length=255)),
                 ('healthGroup', models.IntegerField(default=0)),
-                ('sectionStudent', models.ForeignKey(to='store.Section', null=True)),
+                ('contStudent', models.CharField(max_length=255)),
+                ('sectionStudent', models.ForeignKey(null=True, to='store.Section')),
             ],
+        ),
+        migrations.CreateModel(
+            name='Teacher',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True, serialize=False)),
+                ('fioTeacher', models.CharField(max_length=255)),
+                ('sport', models.CharField(max_length=255)),
+                ('contTeacher', models.CharField(max_length=255)),
+                ('trackRecord', models.CharField(max_length=255)),
+                ('grade', models.IntegerField(default=0)),
+            ],
+        ),
+        migrations.AddField(
+            model_name='section',
+            name='teacher',
+            field=models.ForeignKey(null=True, to='store.Teacher'),
+        ),
+        migrations.AddField(
+            model_name='attendance',
+            name='studentAttend',
+            field=models.ForeignKey(null=True, to='store.Student'),
         ),
     ]

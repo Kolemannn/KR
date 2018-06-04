@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from helpers.multirequest import multirequest
-from helpers.serviceLayer import serviceGroup, serviceStudent
+from helpers.serviceLayer import serviceGroup, serviceStudent, serviceTeacher, serviceManager
 
 from .models import *
 from .forms import *
@@ -22,6 +22,9 @@ def groupedit (request, iid):
 
 def groupdelete( request, iid):
 	return serviceGroup.makeGroupdelete(request, iid)
+
+def groupcreate(request):
+	return serviceGroup.makeGroupcreate(request)
 ###########################Students############################
 
 def students(request):
@@ -39,9 +42,37 @@ def studentedit(request, iid):
 @studentedit.POST
 def studentedit (request, iid):
 	return serviceStudent.makeStudenteditPost(request, iid)
-		
+	
 		
 #######################################################################
 
+def teachers (request):	
+    return serviceTeacher.getTeachers(request)
+
+def teacher(request, iid):
+	return serviceTeacher.getTeacher(request, iid)
+
+def teachercreate(request):
+	return serviceTeacher.makeTeachercreate(request)
+
+@multirequest
+def teacheredit(request, iid):
+	return serviceTeacher.makeTeacheredit(request, iid)	
+
+@teacheredit.POST
+def teacheredit (request, iid):
+	return serviceTeacher.makeTeachereditPost(request, iid)
+
+def teacherdelete( request, iid):
+	return serviceTeacher.makeTeacherdelete(request, iid)
 
 
+
+###########################################################################
+
+def users(request):
+	return render (request, 'store/users.html', locals())
+
+def userManager(request):
+    return serviceManager.reportManager(request)
+	
